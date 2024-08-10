@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="grid grid-cols-4 pl-4 md:px-16 w-screen h-20 border-b-[1px] items-center top-0 fixed bg-white">
+            <img class="h-16 w-28" src="static/airbnb-logo.png" alt=""/>
+            
+        <div class="flex justify-evenly items-center border rounded-full h-12 w-[355px] md:w-96">
+            <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+            <button class="border-r-2 text-sm font-medium px-4">Any Week</button>
+            <button class="text-sm font-medium px-4 text-gray-400">Add  Guests</button>
+            <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+        </div>
+
+        <div class="xl:flex justify-end items-center gap-8 hidden">
+            <button class="text-sm font-medium">Airbnb Your Home</button>
+            <span class="material-symbols-outlined">language</span>
+        </div>
+
+        <div class="xl:flex justify-end hidden items-center gap-8">
+            <div class="flex items-center justify-evenly border rounded-full gap-2 shadow-md h-10 w-20 py-1.25 pr-1.25 pl-2">
+                <i class="fa-solid fa-bars"></i>
+                    <button class="bg-black text-white rounded-full text-center w-7 h-7 text-xs font-semibold">A</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Category Bar -->
+        <div class="md:flex md:items-center md:pl-16 top-20 fixed bg-white w-screen">
+        <div class="flex justify-center items-center space-x-10 h-24">
+            <div class="flex items-center md:justify-evenly">
+            
+            <div class="flex flex-col items-center gap-2 pl-[35px]">
+                <img class="h-10 w-10" src="static/type1.jpeg">
+                <p class="text-xs font-normal text-gray-500 hover:text-black">Swimming Pool</p>
+            </div>
+            
+
+            <div class="flex flex-col items-center gap-2 pl-6">
+                <img class="h-10 w-10 ml-3" src="static/type2.jpeg">
+                <p class="text-xs text-gray-500  hover:text-black">Bowling</p>
+            </div>
+
+            
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-4">
+                <img class="h-10 w-10 ml-3" src="static/type3.jpeg">
+                <p class="text-xs text-gray-500  hover:text-black">Historic Homes</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-4">
+                <img class="h-10 w-10 ml-3" src="static/type4.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">Country Side</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-4">
+                <img class="h-10 w-10 ml-3" src="static/type5.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">Surf</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-6">
+                <img class="h-10 w-10 ml-3 text-center" src="static/type6.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">Farm</p>
+            </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex justify-center items-center space-x-10 h-24">
+            <div class="flex justify-evenly">
+            
+            <div class="flex flex-col items-center gap-2 pl-[35px]">
+                <img class="h-10 w-10" src="static/type7.jpeg">
+                <p class="text-xs font-normal text-gray-500 hover:text-black">Amazing Views</p>
+            </div>
+            
+
+            <div class="flex flex-col items-center gap-2 pl-6">
+                <img class="h-10 w-10 ml-3" src="static/type8.jpeg">
+                <p class="text-xs text-gray-500  hover:text-black">Rooms</p>
+            </div>
+
+            
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-7">
+                <img class="h-10 w-10 ml-3" src="static/type9.jpeg">
+                <p class="text-xs text-gray-500  hover:text-black">Lake Front</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-6">
+                <img class="h-10 w-10 ml-3" src="static/type10.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">Beach Front</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-6">
+                <img class="h-10 w-10 ml-3" src="static/type11.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">UFO</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2 space-x-4 pl-6">
+                <img class="h-10 w-10 ml-3 text-center" src="static/type12.jpeg">
+                <p class="text-xs text-gray-500 hover:text-black">Golf</p>
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+
+
+        <!-- Price Bar -->
+
+        <div class="flex justify-center items-center top-64 md:top-40 fixed bg-white w-screen mt-4 py-4">
+            <div class="flex gap-2 justify-evenly items-center border rounded-md h-12 w-98 md:w-[550px]">
+                <button class="border-r-2 text-sm font-medium px-4">Display Total Price</button>
+                <h1 class="text-sm font-medium px-4 text-gray-400">Include all fees, before taxes </h1>
+                <span class="material-symbols-outlined pr-2 md:flex md:justify-end">
+                    toggle_on
+                    </span>
+            </div>
+        </div>
+    
+    </header>
+
+    <main>
+
+    <div class="grid grid-cols-1 md:grid-cols-4">
+        
+            <div class="md:mt-64 mt-[350px] mb-6">
+            <div class="flex flex-col px-4 space-x-3">
+                <img class="rounded-lg h-80 justify-center items-center" src="static/img1.jpg"/>
+                <div class="flex justify-end ">
+                    <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                    <button class="mt-4">5.0</button>
+                </div>
+                <div class="flex flex-col text-left">
+                    <p>Lonavla, India</p>
+                <p class=" text-gray-400 inline">63 kilometers away</p>
+                <p class="text-gray-400">22-27 JUL</p>
+                <p>₹11,000 night</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="md:mt-64 mb-6">
+                <div class="flex flex-col px-4 space-x-3">
+                    <img class="rounded-lg h-80 justify-center items-center" src="static/img2.jpg"/>
+                
+                
+                    <div class="flex justify-end ">
+                        <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                        <button class="mt-4">5.0</button>
+                    </div>
+                    <div class="flex flex-col text-left">
+                        <p>Lonavla, India</p>
+                    <p class=" text-gray-400 inline">63 kilometers away</p>
+                    <p class="text-gray-400">22-27 JUL</p>
+                    <p>₹11,000 night</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="md:mt-64 mb-6">
+                    <div class="flex flex-col px-4 space-x-3">
+                        <img class="rounded-lg h-80 justify-center items-center" src="static/img3.jpg"/>
+                    
+                    
+                        <div class="flex justify-end ">
+                            <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                            <button class="mt-4">5.0</button>
+                        </div>
+                        <div class="flex flex-col text-left">
+                            <p>Lonavla, India</p>
+                        <p class=" text-gray-400 inline">63 kilometers away</p>
+                        <p class="text-gray-400">22-27 JUL</p>
+                        <p>₹11,000 night</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="md:mt-64 mb-6">
+                        <div class="flex flex-col px-4 space-x-3">
+                            <img class="rounded-lg h-80 justify-center items-center" src="static/img4.jpg"/>
+                        
+                        
+                            <div class="flex justify-end ">
+                                <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                <button class="mt-4">5.0</button>
+                            </div>
+                            <div class="flex flex-col text-left">
+                                <p>Lonavla, India</p>
+                            <p class=" text-gray-400 inline">63 kilometers away</p>
+                            <p class="text-gray-400">22-27 JUL</p>
+                            <p>₹11,000 night</p>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="md:mt-20 mb-6">
+                            <div class="flex flex-col px-4 space-x-3">
+                                <img class="rounded-lg h-80 justify-center items-center" src="static/img1.jpg"/>
+                            
+                            
+                                <div class="flex justify-end ">
+                                    <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                    <button class="mt-4">5.0</button>
+                                </div>
+                                <div class="flex flex-col text-left">
+                                    <p>Lonavla, India</p>
+                                <p class=" text-gray-400 inline">63 kilometers away</p>
+                                <p class="text-gray-400">22-27 JUL</p>
+                                <p>₹11,000 night</p>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="md:mt-20 mb-6">
+                                <div class="flex flex-col px-4 space-x-3">
+                                    <img class="rounded-lg h-80 justify-center items-center" src="static/img2.jpg"/>
+                                
+                                
+                                    <div class="flex justify-end ">
+                                        <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                        <button class="mt-4">5.0</button>
+                                    </div>
+                                    <div class="flex flex-col text-left">
+                                        <p>Lonavla, India</p>
+                                    <p class=" text-gray-400 inline">63 kilometers away</p>
+                                    <p class="text-gray-400">22-27 JUL</p>
+                                    <p>₹11,000 night</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="md:mt-20 mb-6">
+                                    <div class="flex flex-col px-4 space-x-3">
+                                        <img class="rounded-lg h-80 justify-center items-center" src="static/img3.jpg"/>
+                                    
+                                    
+                                        <div class="flex justify-end ">
+                                            <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                            <button class="mt-4">5.0</button>
+                                        </div>
+                                        <div class="flex flex-col text-left">
+                                            <p>Lonavla, India</p>
+                                        <p class=" text-gray-400 inline">63 kilometers away</p>
+                                        <p class="text-gray-400">22-27 JUL</p>
+                                        <p>₹11,000 night</p>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="md:mt-20 mb-6">
+                                        <div class="flex flex-col px-4 space-x-3">
+                                            <img class="rounded-lg h-80 justify-center items-center" src="static/img4.jpg"/>
+                                        
+                                        
+                                            <div class="flex justify-end ">
+                                                <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                                <button class="mt-4">5.0</button>
+                                            </div>
+                                            <div class="flex flex-col text-left">
+                                                <p>Lonavla, India</p>
+                                            <p class=" text-gray-400 inline">63 kilometers away</p>
+                                            <p class="text-gray-400">22-27 JUL</p>
+                                            <p>₹11,000 night</p>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                        <div class="md:mt-20 mb-6">
+                                            <div class="flex flex-col px-4 space-x-3">
+                                                <img class="rounded-lg h-80 justify-center items-center" src="static/img1.jpg"/>
+                                            
+                                            
+                                                <div class="flex justify-end ">
+                                                    <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                                    <button class="mt-4">5.0</button>
+                                                </div>
+                                                <div class="flex flex-col text-left">
+                                                    <p>Lonavla, India</p>
+                                                <p class=" text-gray-400 inline">63 kilometers away</p>
+                                                <p class="text-gray-400">22-27 JUL</p>
+                                                <p>₹11,000 night</p>
+                                                </div>
+                                            </div>
+                                            </div>
+
+                                            <div class="md:mt-20 mb-6">
+                                                <div class="flex flex-col px-4 space-x-3">
+                                                    <img class="rounded-lg h-80 justify-center items-center" src="static/img2.jpg"/>
+                                                
+                                                
+                                                    <div class="flex justify-end ">
+                                                        <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                                        <button class="mt-4">5.0</button>
+                                                    </div>
+                                                    <div class="flex flex-col text-left">
+                                                        <p>Lonavla, India</p>
+                                                    <p class=" text-gray-400 inline">63 kilometers away</p>
+                                                    <p class="text-gray-400">22-27 JUL</p>
+                                                    <p>₹11,000 night</p>
+                                                    </div>
+                                                </div>
+                                                </div>
+                
+                                                <div class="md:mt-20 mb-6">
+                                                    <div class="flex flex-col px-4 space-x-3">
+                                                        <img class="rounded-lg h-80 justify-center items-center" src="static/img3.jpg"/>
+                                                    
+                                                    
+                                                        <div class="flex justify-end ">
+                                                            <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                                            <button class="mt-4">5.0</button>
+                                                        </div>
+                                                        <div class="flex flex-col text-left">
+                                                            <p>Lonavla, India</p>
+                                                        <p class=" text-gray-400 inline">63 kilometers away</p>
+                                                        <p class="text-gray-400">22-27 JUL</p>
+                                                        <p>₹11,000 night</p>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                
+                                                    <div class="md:mt-20 mb-6">
+                                                        <div class="flex flex-col px-4 space-x-3">
+                                                            <img class="rounded-lg h-80 justify-center items-center" src="static/img4.jpg"/>
+                                                        
+                                                        
+                                                            <div class="flex justify-end ">
+                                                                <i class="fa-solid fa-star inline mt-5 pr-1"></i>
+                                                                <button class="mt-4">5.0</button>
+                                                            </div>
+                                                            <div class="flex flex-col text-left">
+                                                                <p>Lonavla, India</p>
+                                                            <p class=" text-gray-400 inline">63 kilometers away</p>
+                                                            <p class="text-gray-400">22-27 JUL</p>
+                                                            <p>₹11,000 night</p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+        
+
+            </div>
+    </main>
+
+    <footer>
+        <footer class="h-12 fixed bottom-0 w-screen bg-white flex justify-between items-center px-5">
+            <div class="flex space-x-2 text-sm font-base">
+                <p>© 2023 Airbnb, Inc.</p>
+                <p>·</p>
+                <p>Privacy</p>
+                <p>·</p>
+                <p>Terms</p>
+                <p>·</p>
+                <p>Sitemap</p>
+                <p>·</p>
+                <p>Company details</p>
+            </div>
+            <div class="md:flex space-x-4 text-sm font-medium hidden">
+                <span class="material-symbols-outlined">language</span>
+                <p>English(IN)</p>
+                <p>₹ INR</p>
+                <p>Support & resources</p>
+            </div>
+    </footer>
+
+
+    </footer>
+
+</body>
+</html>
